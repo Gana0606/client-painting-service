@@ -1,0 +1,43 @@
+.naviColor {
+	color: #fff;
+}
+
+.navbar-items {
+	font-size: 1.5em;
+}
+
+.navbar-brand {
+	left: 70px;
+	font-size: 1.3em;
+}
+
+.second-navbar {
+  position: fixed;
+  top: 90px; /* Adjust based on the actual height of the first navbar */
+  z-index: 1020; /* Make sure it's properly layered */
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 1em; /* Smaller font size for the brand */
+    left: 0; /* Adjust positioning if necessary */
+    padding-left: 10px; /* Add some padding if the logo is too close to the screen edge */
+  }
+
+  .navbar-items {
+    font-size: 1em; /* Smaller font size for navbar items */
+  }
+
+  .second-navbar {
+    top: 90px; /* Adjust this based on the new height of the first navbar */
+  }
+
+  .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .navbar-toggler {
+    float: right;
+  }
+}
